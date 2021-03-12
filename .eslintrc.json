@@ -1,0 +1,19 @@
+{
+  "root": true,
+  "extends": [
+    "airbnb-base",
+    "plugin:jest/recommended"
+  ],
+  "env": {
+    "browser": true
+  },
+  "rules": {
+    "jest/no-mocks-import": "off"
+  },
+  "overrides": [
+    {
+      "files": ["src/__tests__/decorator.spec.js"],
+      "parser": "babel-eslint"
+    }
+  ]
+}
